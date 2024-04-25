@@ -11,7 +11,7 @@ loader = PyPDFLoader("D:/Codes_VS/New folder/rag_langchain_app/leave_no_context_
 
 pages = loader.load_and_split()
 
-f = open('D:/Codes_VS/New folder/rag_langchain_app/key.txt')
+f = open('D:/Codes_VS/New folder/rag_langchain_app/key.txt')        #save your Google API key in a text file
 key = f.read()
 genai.configure(api_key=key)
 
